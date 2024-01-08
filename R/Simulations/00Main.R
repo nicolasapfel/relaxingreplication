@@ -1,0 +1,71 @@
+# Main file for simulations and visualizations
+
+setwd("~/IVSelection/R/Code") # Adjust this path
+
+# 0 Load packages
+install.packages('xtable')
+install.packages('matrixcalc')
+install.packages('ddpcr')
+install.packages('gtools')
+install.packages("doParallel")
+install.packages("doRNG")
+install.packages("tictoc")
+install.packages("matrixcalc")
+install.packages("Matrix")
+install.packages("estimatr")
+install.packages("panelvar")
+install.packages("crayon")
+install.packages("Rcpp")
+install.packages("AER")
+install.packages("sisVIVE")
+install.packages("parcor")
+install.packages("glmnet")
+install.packages(c("gmm", "plm"))
+install.packages("gdata")
+install.packages("cowplot")
+install.packages("ivpack")
+install.packages("limma")
+
+library(limma)
+library(ggplot2)
+library(xtable)
+library(Matrix)
+library(sisVIVE)
+library(MASS)
+library(AER)
+library(Rcpp)
+library(car)
+library(parcor)
+library(glmnet)
+library(gmm)
+library(xtable)
+library(matrixcalc)
+library(dplyr)
+library(plm)
+library(ddpcr)
+library(gtools)
+library(parallel)
+library(doParallel)
+library(foreach)
+library(doRNG)
+library(tictoc)
+library(estimatr)
+library(panelvar)
+library(foreign)
+library(gdata)
+library(cowplot)
+library(haven)
+library(dplyr)
+library(ivmodel)
+library(ivpack) # This is not available anymore and needs to be installed manually via Tools
+library(zoo)
+require(bigmemory)
+require(cluster)
+
+# 1 Needed function
+source("01Functions_repo.R")
+
+# 2 Simulation file
+source("02Simulations.R")
+
+# 3 Create tables
