@@ -1,6 +1,6 @@
 # Main file for simulations and visualizations
 
-setwd("~/IVSelection/R/Code") # Adjust this path
+setwd("~/IVSelection/R") # Adjust this path to R-folder
 
 # 0 Load packages
 install.packages('xtable')
